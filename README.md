@@ -1,3 +1,4 @@
+#SAMLMetadata Editor
 #Legal
 	Copyright 2011 Terena. All rights reserved.
 
