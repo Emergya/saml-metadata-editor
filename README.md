@@ -1,11 +1,40 @@
+#SAMLMetadata Editor
+[Versión Español] (https://github.com/Yaco-Sistemas/saml-metadata-editor/blob/milestone-1/README.md#resumen) | [English Version] (https://github.com/Yaco-Sistemas/saml-metadata-editor/blob/milestone-1/README.md#abstract)
+#Legal
+	Copyright 2014 Terena. All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions
+	are met:
+
+	1. Redistributions of source code must retain the above copyright notice,
+	    this list of conditions and the following disclaimer.
+
+	2. Redistributions in binary form must reproduce the above copyright notice,
+	    this list of conditions and the following disclaimer in the documentation
+	    and/or other materials provided with the distribution.
+
+	THIS SOFTWARE IS PROVIDED BY TERENA ``AS IS'' AND ANY EXPRESS OR IMPLIED
+	WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+	MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+	EVENT SHALL TERENA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+	INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+	LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+	PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+	LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+	OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+	ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+	The views and conclusions contained in the software and documentation are those
+	of the authors and should not be interpreted as representing official policies,
+	either expressed or implied, of Terena.
+
 # Resumen
----
 *SAML Meta Editor* es una aplicacion web que permite editar de forma visual los ficheros de metadatos de protocolo SAML2, según se define en este [documento](http://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf).
 
 La aplicación funciona en modo cliente y está realizada con [Underscorejs](http://underscorejs.org/), [Backbonejs](http://backbonejs.org/), [requirejs](http://requirejs.org/), [Jquery](http://jquery.com/) y [Foundation](http://foundation.zurb.com/).
 
 # Instalación.
----
 Como ya hemos indicado es una aplicación web en modo cliente, por lo que podremos desplegarla en cualquier contendedor de aplicaciones que soporte Javascript e ir a la siguiente [dirección](http://localhost:8080/SAMLMetadataEditor/index.htm).
 
 Si por el contrario deseamos incluir la aplicación como modulo en otra ya existente, se deberá tener en cuenta que funciona con requirejs. Por lo que en el código javascript se deberá incluir la vista *SAMLMetaEditorView* renderizada en un contenedor *div*, tal como se muestra a continuación.
@@ -25,7 +54,6 @@ Para una mayor comprensión indicaremos la responsabilidad de los modulos y fich
 Es necesario importar requirejs, ya que toda la aplicación esta modularizada con esta librería, sino existiran fallos de tipos indefinidos.
  
 # Manual
----
 *SAML Meta Editor* consta de dos pestañas, la primera de ellas nos permite construir el arbol de elementos que definirán los metadatos. La segunda pestaña nos permite ver o editar el documento XML.
 
 ## Pestaña *Structure*.
@@ -69,7 +97,6 @@ En la siguiente ilustración se puede ver una muestra de la sección.
 Esta pestaña muestra el fichero XML generado, el cual responde al estandar XML de metadatos de SAML2. El texto se mostrará en una caja de texto y se podrá editar, pudiendo cambiar alguno de sus valores si es necesario. El proceso de generación es inverso, es decir, si añadimos un fichero de metadatos validos y pulsamos sobre la pestaña *Structure* se genera el arbol correspondiente.
 
 # Ejemplo.
----
 Para verificar su funcionamiento se puede copiar y pegar en la pestaña XML el siguiente fichero de metadatos SAML2. Si pulsamos sobre la pestaña *Structure* se podrá ver el arbol generado.
 
 		<?xml version="1.0"?>
@@ -104,16 +131,12 @@ Para verificar su funcionamiento se puede copiar y pegar en la pestaña XML el s
 		  </md:ContactPerson>
 		</md:EntityDescriptor>
 		
-* * *
-
 # Abstract
----
 *SAML Meta Editor* is a web application that allows visually edit metadata files SAML2 protocol, as defined in this [document](http://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf).
 
 The application works in client mode and is made with [Underscorejs](http://underscorejs.org/), [Backbonejs](http://backbonejs.org/), [requirejs](http://requirejs.org/), [Jquery](http://jquery.com/) y [Foundation](http://foundation.zurb.com/).
 
 # Installation.
----
 As we have indicated is a web application in client mode, so we can display it in any application that supports contender Javascript and go to the next [dirección](http://localhost:8080/SAMLMetadataEditor/index.htm).
 
 If instead you want to include in the application as an existing module, you should consider running RequireJS. So in the javascript code should include the view *SAMLMetaEditorView* rendered in a container *div*, as shown below.
@@ -133,7 +156,6 @@ For a better understanding of responsibility indicate modules and files:
 RequireJS be imported because the entire application is modularized with this library, but undefined types of failures will exist.
  
 # Manual
----
 *SAML Meta Editor* consists of two tabs, the first one allows us to build the tree of elements that define the metadata. The second tab allows you to view or edit the XML document.
 
 ## Tab *Structure*.
@@ -177,7 +199,6 @@ In the illustration below you can see an example of the section.
 This tab shows the XML file generated, which responds to the XML standard SAML2 metadata. The text is displayed in a text box and can be edited, and may change any of its values ​​if necessary. The build process is reversed, ie, if we add a valid metadata file and click on the tab *Structure* the corresponding tree is generated.
 
 # Example.
----
 To verify operation you can copy and paste into the XML tab next SAML2 metadata file. If you click on the tab *Structure* may see the tree generated.
 
 		<?xml version="1.0"?>
