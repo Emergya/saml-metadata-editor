@@ -1,3 +1,34 @@
+#Legal
+	Copyright 2011 Terena. All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions
+	are met:
+
+	1. Redistributions of source code must retain the above copyright notice,
+	    this list of conditions and the following disclaimer.
+
+	2. Redistributions in binary form must reproduce the above copyright notice,
+	    this list of conditions and the following disclaimer in the documentation
+	    and/or other materials provided with the distribution.
+
+	THIS SOFTWARE IS PROVIDED BY TERENA ``AS IS'' AND ANY EXPRESS OR IMPLIED
+	WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+	MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+	EVENT SHALL TERENA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+	INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+	LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+	PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+	LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+	OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+	ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+	The views and conclusions contained in the software and documentation are those
+	of the authors and should not be interpreted as representing official policies,
+	either expressed or implied, of Terena.
+
+[Versión Español] (https://github.com/Yaco-Sistemas/saml-metadata-editor/blob/milestone-1/README.md#resumen) | [English Version] (https://github.com/Yaco-Sistemas/saml-metadata-editor/blob/milestone-1/README.md#abstract)
+
 # Resumen
 *SAML Meta Editor* es una aplicacion web que permite editar de forma visual los ficheros de metadatos de protocolo SAML2, según se define en este [documento](http://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf).
 
@@ -23,7 +54,6 @@ Para una mayor comprensión indicaremos la responsabilidad de los modulos y fich
 Es necesario importar requirejs, ya que toda la aplicación esta modularizada con esta librería, sino existiran fallos de tipos indefinidos.
  
 # Manual
----
 *SAML Meta Editor* consta de dos pestañas, la primera de ellas nos permite construir el arbol de elementos que definirán los metadatos. La segunda pestaña nos permite ver o editar el documento XML.
 
 ## Pestaña *Structure*.
@@ -101,8 +131,6 @@ Para verificar su funcionamiento se puede copiar y pegar en la pestaña XML el s
 		  </md:ContactPerson>
 		</md:EntityDescriptor>
 		
-* * *
-
 # Abstract
 *SAML Meta Editor* is a web application that allows visually edit metadata files SAML2 protocol, as defined in this [document](http://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf).
 
