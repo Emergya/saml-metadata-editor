@@ -1,4 +1,5 @@
 #SAMLMetadata Editor
+[Versión Español] (https://github.com/Yaco-Sistemas/saml-metadata-editor/blob/milestone-1/README.md#resumen) | [English Version] (https://github.com/Yaco-Sistemas/saml-metadata-editor/blob/milestone-1/README.md#abstract)
 #Legal
 	Copyright 2011 Terena. All rights reserved.
 
@@ -27,8 +28,6 @@
 	The views and conclusions contained in the software and documentation are those
 	of the authors and should not be interpreted as representing official policies,
 	either expressed or implied, of Terena.
-
-[Versión Español] (https://github.com/Yaco-Sistemas/saml-metadata-editor/blob/milestone-1/README.md#resumen) | [English Version] (https://github.com/Yaco-Sistemas/saml-metadata-editor/blob/milestone-1/README.md#abstract)
 
 # Resumen
 *SAML Meta Editor* es una aplicacion web que permite editar de forma visual los ficheros de metadatos de protocolo SAML2, según se define en este [documento](http://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf).
