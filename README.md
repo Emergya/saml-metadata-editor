@@ -1,11 +1,9 @@
 # Resumen
----
 *SAML Meta Editor* es una aplicacion web que permite editar de forma visual los ficheros de metadatos de protocolo SAML2, según se define en este [documento](http://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf).
 
 La aplicación funciona en modo cliente y está realizada con [Underscorejs](http://underscorejs.org/), [Backbonejs](http://backbonejs.org/), [requirejs](http://requirejs.org/), [Jquery](http://jquery.com/) y [Foundation](http://foundation.zurb.com/).
 
 # Instalación.
----
 Como ya hemos indicado es una aplicación web en modo cliente, por lo que podremos desplegarla en cualquier contendedor de aplicaciones que soporte Javascript e ir a la siguiente [dirección](http://localhost:8080/SAMLMetadataEditor/index.htm).
 
 Si por el contrario deseamos incluir la aplicación como modulo en otra ya existente, se deberá tener en cuenta que funciona con requirejs. Por lo que en el código javascript se deberá incluir la vista *SAMLMetaEditorView* renderizada en un contenedor *div*, tal como se muestra a continuación.
@@ -69,7 +67,6 @@ En la siguiente ilustración se puede ver una muestra de la sección.
 Esta pestaña muestra el fichero XML generado, el cual responde al estandar XML de metadatos de SAML2. El texto se mostrará en una caja de texto y se podrá editar, pudiendo cambiar alguno de sus valores si es necesario. El proceso de generación es inverso, es decir, si añadimos un fichero de metadatos validos y pulsamos sobre la pestaña *Structure* se genera el arbol correspondiente.
 
 # Ejemplo.
----
 Para verificar su funcionamiento se puede copiar y pegar en la pestaña XML el siguiente fichero de metadatos SAML2. Si pulsamos sobre la pestaña *Structure* se podrá ver el arbol generado.
 
 		<?xml version="1.0"?>
@@ -107,13 +104,11 @@ Para verificar su funcionamiento se puede copiar y pegar en la pestaña XML el s
 * * *
 
 # Abstract
----
 *SAML Meta Editor* is a web application that allows visually edit metadata files SAML2 protocol, as defined in this [document](http://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf).
 
 The application works in client mode and is made with [Underscorejs](http://underscorejs.org/), [Backbonejs](http://backbonejs.org/), [requirejs](http://requirejs.org/), [Jquery](http://jquery.com/) y [Foundation](http://foundation.zurb.com/).
 
 # Installation.
----
 As we have indicated is a web application in client mode, so we can display it in any application that supports contender Javascript and go to the next [dirección](http://localhost:8080/SAMLMetadataEditor/index.htm).
 
 If instead you want to include in the application as an existing module, you should consider running RequireJS. So in the javascript code should include the view *SAMLMetaEditorView* rendered in a container *div*, as shown below.
@@ -133,7 +128,6 @@ For a better understanding of responsibility indicate modules and files:
 RequireJS be imported because the entire application is modularized with this library, but undefined types of failures will exist.
  
 # Manual
----
 *SAML Meta Editor* consists of two tabs, the first one allows us to build the tree of elements that define the metadata. The second tab allows you to view or edit the XML document.
 
 ## Tab *Structure*.
@@ -177,7 +171,6 @@ In the illustration below you can see an example of the section.
 This tab shows the XML file generated, which responds to the XML standard SAML2 metadata. The text is displayed in a text box and can be edited, and may change any of its values ​​if necessary. The build process is reversed, ie, if we add a valid metadata file and click on the tab *Structure* the corresponding tree is generated.
 
 # Example.
----
 To verify operation you can copy and paste into the XML tab next SAML2 metadata file. If you click on the tab *Structure* may see the tree generated.
 
 		<?xml version="1.0"?>
