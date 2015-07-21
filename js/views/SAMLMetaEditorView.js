@@ -33,7 +33,7 @@ function($, _, Backbone, SAMLMetaEditorTemplate, StructureView, ModelFactory) {
 				return false;
 				
 			var node = jQuery.parseXML(xml);
-			node = node.children.item();
+			node = node.children.item(0);
 			
 			this.root = toStructure(node);
 			this.structureView.setRoot(this.root);
