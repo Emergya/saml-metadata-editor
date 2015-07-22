@@ -27,6 +27,7 @@ function($, _, Backbone) {
 	               	{value:"false", name:"False"}
 			  ];
 
+			  break;
 		  case "attributeFormat":
 			  collection = [
 	                {value:"urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified", name:"unspecified"},
