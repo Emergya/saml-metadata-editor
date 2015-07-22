@@ -29,6 +29,20 @@ function(App) {
 	$(document).foundation();
 	$(window).resize(function() {resizeElements();});
 	$(document).ready(function() {resizeElements();});
+
+	var event = new CustomEvent(
+		"customSamlEditor", 
+		{
+			detail: {
+				message: "Customized saml meta editor",
+				time: new Date(),
+			},
+			bubbles: true,
+			cancelable: true
+		}
+		);
+
+	document.getElementById("samlmetaeditor").dispatchEvent(event);  
 });
 
 
