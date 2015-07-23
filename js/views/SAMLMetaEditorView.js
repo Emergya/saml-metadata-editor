@@ -140,6 +140,10 @@ function($, _, Backbone, SAMLMetaEditorTemplate, StructureView, ModelFactory) {
 			var child = nodeXML.children[i];
 			var tagName = child.tagName;
 
+			if (tagName.indexOf(":") == -1){
+				tagName = "md:".concat(tagName);
+			}
+
 			var xml = "";
 			if(options.indexOf(tagName) != -1){
 				var node = toStructure(child);

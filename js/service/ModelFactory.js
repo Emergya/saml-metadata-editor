@@ -61,7 +61,9 @@ function($, _, Backbone,
 	
 	var create = function(type){
 		var node = null;
-		
+		if (type.indexOf(":") == -1){
+			type = "md:".concat(type);
+		}
 		switch (type) { 
 		  case "md:AdditionalMetadataLocation":
 				node = new AdditionalMetadataLocation();
