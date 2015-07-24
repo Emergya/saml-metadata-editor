@@ -37,6 +37,7 @@ function($, _, Backbone, SAMLMetaEditorTemplate, StructureView, ModelFactory) {
 			
 			this.root = toStructure(node);
 			this.structureView.setRoot(this.root);
+			this.structureView.selectNode(null, null);
 		},
 		toXML : function(){
 	    	var xml = toXML(0, this.root);
