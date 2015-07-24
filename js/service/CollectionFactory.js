@@ -16,6 +16,7 @@ function($, _, Backbone) {
 	               	{value:"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST", name:"HTTP POST"},
 	               	{value:"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact", name:"HTTP Artifact"},
 	               	{value:"urn:oasis:names:tc:SAML:2.0:bindings:SOAP", name:"SOAP"},
+	               	{value:"urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding", name:"SOAP-binding"},
 	               	{value:"urn:oasis:names:tc:SAML:2.0:bindings:PAOS", name:"Reverse SOAP (PAOS)"},
 	              	{value:"urn:oasis:names:tc:SAML:2.0:bindings:URI", name:"URI"}			  
 			  ];
