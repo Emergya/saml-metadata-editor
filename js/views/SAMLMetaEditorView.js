@@ -13,12 +13,14 @@ function($, _, Backbone, SAMLMetaEditorTemplate, StructureView, ModelFactory) {
 		initialize : function(options){
 			this.root = ModelFactory.create("md:EntityDescriptor");
 			this.structureView = new StructureView({root : this.root});
+			this.xmlErrorsView = new XmlErrorsView();
 		},
 		render : function(){
 			var compiledTemplate = _.template(SAMLMetaEditorTemplate);
 			this.$el.html(compiledTemplate());
 
 			this.$el.find("#structureTab").append(this.structureView.render().el);
+			this.$el.find("#xmlErrors").append(this.xmlErrorsView.render().el);
 			
 			return this;
 		},
@@ -32,7 +34,13 @@ function($, _, Backbone, SAMLMetaEditorTemplate, StructureView, ModelFactory) {
 			if(xml == null || xml.length == 0)
 				return false;
 				
-			var node = jQuery.parseXML(xml);
+			try {
+				var node = jQuery.parseXML(xml);
+			}
+			catch(err) {
+				this.xmlErrorsView.setError("Error: Invalid XML")
+				return false;
+			}
 			node = node.children.item(0);
 			
 			this.root = toStructure(node);
@@ -40,6 +48,7 @@ function($, _, Backbone, SAMLMetaEditorTemplate, StructureView, ModelFactory) {
 			this.structureView.selectNode(null, null);
 		},
 		toXML : function(){
+			this.xmlErrorsView.resetError()
 	    	var xml = toXML(0, this.root);
 	    	this.$el.find("#xmlcontent").val(xml);
 		}
@@ -160,6 +169,32 @@ function($, _, Backbone, SAMLMetaEditorTemplate, StructureView, ModelFactory) {
 		
 		return nodeSAML;
 	};	
+
+	var XmlErrorsView = Backbone.View.extend({
+		initialize : function(){
+			this.xmlerrors = null
+		},
+		template : _.template(
+				"<% if(xmlerrors != null){%>" +
+				"		<div data-alert class='alert-box alert radius'><%=xmlerrors%></div>" +
+				"<%}%>"
+		),
+		render : function(){
+			this.$el.html(this.template({
+				xmlerrors : this.xmlerrors
+			}));
+			return this;
+		},
+		setError : function(xmlerrors){
+			this.xmlerrors = xmlerrors;
+			this.render();
+		},
+		resetError : function(){
+			this.xmlerrors = null;
+			this.render();
+		}
+	});
+
 	
 	return SAMLMetaEditorView;
 });
