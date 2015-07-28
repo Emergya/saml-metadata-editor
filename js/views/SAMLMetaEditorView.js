@@ -30,6 +30,9 @@ function($, _, Backbone, SAMLMetaEditorTemplate, StructureView, ModelFactory) {
 			"click a#toXML" : "toXML"
 		},
 		toTree : function(){
+			if (this.$el.find("#structureTab").hasClass("active")){
+				return false
+			}
 			var xml = this.$el.find("#xmlcontent").val().replace(/\n/g,"").replace(/\t+/g," ").trim();
 			if(xml == null || xml.length == 0)
 				return false;
@@ -48,6 +51,9 @@ function($, _, Backbone, SAMLMetaEditorTemplate, StructureView, ModelFactory) {
 			this.structureView.selectNode(null, null);
 		},
 		toXML : function(){
+			if (this.$el.find("#xmlTab").hasClass("active")){
+				return false
+			}
 			this.xmlErrorsView.resetError()
 	    	var xml = toXML(0, this.root);
 	    	this.$el.find("#xmlcontent").val(xml);
