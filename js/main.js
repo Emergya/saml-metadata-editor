@@ -47,6 +47,6 @@ function(App) {
 
 
 function resizeElements(){
-	$("#xmlcontent").height(window.innerHeight - 204);
+	$("#xmlcontent").height(window.innerHeight - 524);
 	$("#tree").height(window.innerHeight - 204);
 }
